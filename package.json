@@ -1,0 +1,20 @@
+{
+  "name": "_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ol": "7.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "vite": "^3.1.6"
+  }
+}

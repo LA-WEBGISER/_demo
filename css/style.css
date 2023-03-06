@@ -1,0 +1,171 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#map{
+	position: fixed;
+	width:100%;
+	height:100%;
+	
+	top: 0;
+}
+.ol-zoom{
+	display: none;
+}
+
+#canvas{
+	position:absolute;
+	width: 100%;
+	height:100%;
+	/* background-color: red; */
+	/* margin-top: 0;
+	left:0;
+	width:300px;
+	height:865px; */
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	background-color: aqua;
+	
+}
+.layui-nav{
+	display: flex;
+	justify-content: center;
+	z-index: 999;
+}
+#openlayers{
+	position: absolute;
+	font-family:'Times New Roman', Times, serif;
+	font-size: 50px;
+	left: 0;
+	color: white;
+	z-index: 9999;
+}
+#segments,#clear{
+	display: none;
+}
+
+.basemap{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    z-index: 999;
+    position: fixed;
+    width: 100px;
+    height:80px;
+    right: 1rem;
+    bottom: 1rem;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    -ms-transition: all .1s;
+    -o-transition: all .1s;
+    overflow: hidden;
+    background-image: url(../img/tianditu.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.basemap:hover{
+    width: 620px;
+}
+.basemap span{
+    position: fixed;
+    right: 55px;
+    bottom: 110px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.445);
+    opacity: 0;
+    cursor: default;
+}
+.basemap:hover span{
+    opacity: 1;
+}
+
+.basemap a{
+
+    float: right;
+    right: 120px;
+    position: relative;
+    width: 100px;
+    height: 80px;
+}
+
+
+.basemap a:nth-child(1){
+    background: url(../img/tianditu.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.basemap a:nth-child(2){
+    background: url(../img/gaode.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.basemap a:hover{
+    box-shadow:inset 0 0 0 2000px rgba(255,0,150,0.3);
+}
+
+
+
+
+#layerControl {
+	    position: absolute;
+	    z-index: 99999;
+	    width: 200px;
+	    height: 300px;
+	    background-color: rgba(78, 70, 109, 0.596);
+	    right: 45px;
+	    top: 60px;
+	    padding: 5px;
+	    border-radius: 10px;
+	    -webkit-border-radius: 10px;
+	    -moz-border-radius: 10px;
+	    -ms-border-radius: 10px;
+	    -o-border-radius: 10px;
+	}
+	
+	#layerControl .title {
+	    color: ivory;
+	    text-align: center;
+	    font-size: 20px;
+	    margin: 20px 0px;
+	}
+	
+	#layerControl li {
+	    color: ivory;
+	}
+	
+	#layerControl input {
+	    margin-right: 10px;
+	}
+	
+	#layerlistbtn {
+	    position: fixed;
+		z-index: 99999;
+	    right: 15px;
+	    
+	}
+	#heat{
+		position: absolute;
+		z-index: 9999;
+		font-size: 15px;
+		color: aqua;
+		margin-top: 0;
+		
+	}
+
+#info{
+	display: flex;
+	margin-top: 1rem;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	align-items: center;
+	justify-content: center;
+	color: aqua
+}
+
+
+

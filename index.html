@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>WebGis平台</title>
+	<link rel="shortcut icon" href="img/webgis.favicon.ico"/>
+    <link rel="stylesheet" href="node_modules/ol/ol.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<script src="layui/layui.js"></script>
+	<script src="js/element.js"></script>
+	
+  </head>
+  <body>
+	  <h1 id="openlayers">二维系统</h1>
+	<ul class="layui-nav">
+	  <li class="layui-nav-item"><a href="WebGL/webgl.html">WebGL</a></li>
+	<li class="layui-nav-item"><a href="WebGL/webglsimple.html">WebGLSimple</a></li>
+	  
+	  <li class="layui-nav-item">
+	    <a href="javascript:;" >测距测面</a>
+	    <select class="layui-nav-child" id='type'> <!-- 二级菜单 -->
+			<option value="none">none</option>
+	      <option value='LineString'>Length</option>
+	      <option value='Polygon'>Area</option>
+		  <option value="Circle">Circle</option>
+	    </select>
+		
+	  </li>
+	  &nbsp;&nbsp;&nbsp;&nbsp;
+	  <!-- <label for="segments">显示中途长途/面积:&nbsp;</label> -->
+	  <input type="checkbox" id="segments"  checked>
+	   &nbsp;&nbsp;&nbsp;&nbsp;
+	 <!-- <label for="clear">清除上一次的绘图:&nbsp;</label> -->
+	  <input type="checkbox" id="clear" checked>
+	  
+	</ul>
+	 <!--图层控制 -->
+	 <input type="button" name="" id="layerList">
+	     <label for="layerList" >
+	         <i class="layui-icon layui-icon-console" id="layerlistbtn" title="图层栏" ></i>
+	     </label>
+	     <div id="layerControl" style="display:block;">
+	         <div class="title"><label>图层列表</label></div>
+	         <ul id="layerTree" class="layerTree">
+	             <li id="nnn"></li>
+	         </ul>
+	     </div>
+	 
+	 <!--底图切换-->
+	 <div class="basemap" id="basemap0">
+	 	<a  id="td" href="javascript:;"></a>
+		<a  id='tds'  href="javascript:;"></a>
+		<span>当前地图</span>
+	 </div>
+	
+	<!-- <canvas id="canvas" width="300px" height="865px"></canvas> -->
+	<!--heat map -->
+	<form id="heat">
+		<label for="radius">radius size</label>
+		<input id="radius" type="range" min="1" max="50" step="1" value="15" />
+		<label for="blur">blur size</label>
+		<input id="blur" type="range" min="1" max="50" step="1" value="15" />
+	</form>
+	<div id="info">&nbsp;</div>
+    <div id="map"></div>
+	
+    <script type="module" src="main.js"></script>
+	<!-- <script  type='module' src="js/custom_move.js"></script> -->
+	<!-- <script type="module" src="js/canvas.js"></script> -->
+  </body>
+</html>
