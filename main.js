@@ -3,6 +3,7 @@ import basemapChange from './js/layerChange.js'
 import {styleFunction,addInteraction,showSegments,clearPrevious} from './js/measure.js'
 import layerControl from './js/layerControl.js'
 import clickmove from './js/clickmove.js'
+import postgis_shortline from './js/postgis_shortline.js'
 //键盘控制
 window.addEventListener('keydown',e=>{
 	console.log(e.key.indexOf())

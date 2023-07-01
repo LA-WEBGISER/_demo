@@ -53,9 +53,11 @@ const displayFeatureInfo = function (pixel) {
     if (feature !== highlight) {
       if (highlight) {
         featureOverlay.getSource().removeFeature(highlight);
+		console.log(highlight)
       }
       if (feature) {
         featureOverlay.getSource().addFeature(feature);
+		console.log(feature)
       }
       highlight = feature;
     }

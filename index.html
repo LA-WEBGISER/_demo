@@ -13,6 +13,7 @@
   </head>
   <body>
 	  <h1 id="openlayers">二维系统</h1>
+	  
 	<ul class="layui-nav">
 	  <li class="layui-nav-item"><a href="WebGL/webgl.html">WebGL</a></li>
 	<li class="layui-nav-item"><a href="WebGL/webglsimple.html">WebGLSimple</a></li>
@@ -25,7 +26,12 @@
 	      <option value='Polygon'>Area</option>
 		  <option value="Circle">Circle</option>
 	    </select>
-		
+		<li class="layui-nav-item">
+			<button id="one_start" class="layui-btn" >路径查询</button>
+			
+				<button id="one_clear" class="layui-btn" >清除路线</button>
+			
+		</li>
 	  </li>
 	  &nbsp;&nbsp;&nbsp;&nbsp;
 	  <!-- <label for="segments">显示中途长途/面积:&nbsp;</label> -->
@@ -63,6 +69,7 @@
 		<input id="blur" type="range" min="1" max="50" step="1" value="15" />
 	</form>
 	<div id="info">&nbsp;</div>
+	
     <div id="map"></div>
 	
     <script type="module" src="main.js"></script>

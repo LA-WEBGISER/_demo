@@ -42,7 +42,7 @@ export let td_cva=new TileLayer({
 		
 		url: "http://t0.tianditu.com/DataServer?T=img_w&x={x}&y={y}&l={z}&tk=8331e08d1656e2ee9467634ec70d1ae9",
 		
-		wrapX: false
+		wrapX: false,
 	}),
 	visible:true
 });
@@ -62,7 +62,7 @@ export let td_cva=new TileLayer({
 export let views = new View({
 	
 	center: [14101606, 5746241],
-	
+	projection:"EPSG:3857",
 	zoom: 12,
 	minZoom: 6,
 	maxZoom: 18,
@@ -83,8 +83,8 @@ const overviewMapControl = new OverviewMap({
 const zoomToExtent = new ZoomToExtent({
 	extent:[
 		
-		 14090968.211420412,5745622.892282406,
-		 14102685.35749526,5736081.485979275
+		 12667346.724533198,2603049.1526174896,
+		 12732120.403087696,2558517.2424339713
 		         
 		// 14101606.552068463,5746241.980183128,
 		// 14102706.489454897,5745182.964441222
